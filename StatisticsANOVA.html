@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <title>Single-Factor ANOVA Test</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <header>
+        <h1>Single-Factor ANOVA Test</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+            <div class="dropdown-content">
+                <a href="ChiP.html">P-Values</a>
+                <a href="ChiN.html">Null Hypothesis</a>
+                <a href="ChiS.html">Statistical Significance</a>
+                <a href="ChiAT.html">All Together</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+            <div class="dropdown-content">
+                <a href="ANOVAMS.html">Mean of Squares</a>
+                <a href="ANOVASS.html">Sum of Squares</a>
+                <a href="ANOVAF.html">F-value/critical value</a>
+                <a href="ANOVADF.html">Degrees of Freedom</a>
+                <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                <a href="ANOVAES.html">Eta-Squared Value</a>
+                <a href="ANOVAAT.html">All Together</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                    <div class="dropdown-content">
+                    <a href="SpearCA.html">Cronbach's Alpha</a>
+                    <a href="SpearAT.html">All Together</a>
+                </div>
+            </div>
+    </nav>
+    <h1>What is an ANOVA Test?</h1>
+    <p>ANOVA (Analysis of Variance) is a statistical method used to compare the means of three or more groups to determine if there are significant differences among them. It examines the variability within each group and across groups to assess statistical significance. ANOVA is a statistical test used to examine differences among the means of three or more groups. Unlike a t-test, which only compares two groups, ANOVA can handle multiple groups in a single analysis, making it an essential tool for experiments with more than two categories. For example, if a researcher wants to test the effects of three different study methods on student performance, ANOVA can help determine if there are significant performance differences among the groups.</p>
+    <h1>Why do we use an ANOVA Test?</h1>
+    <p>We use an ANOVA Test because we might have one or more independent variables with three or more levels. If you only have two comparison levels total, a t-test would be used instead. Your dependent variable is continuous, allowing for means to be calculated within each group. The groups have equal variances, which can be tested as part of implementing an ANOVA. Each observation in your dataset is independent of the others.</p>
+    <h1>What are the different types of ANOVA Tests?</h1>
+    <p>There are two types of ANOVA Tests:</p>
+    <section class="container">
+        <div class="courses">
+            <div class="course-card">
+                <h2>Single Factor/One Way ANOVA Test</h2>
+                <p>One-way ANOVA is used to compare the means of three or more groups based on a single independent variable. It shows if there is a significant difference among the group means. This method is used when there is only one independent variable (factor) with multiple levels or groups. It tests if there is a significant difference in the means of the dependent variable across the different levels of the independent variable. One-way or two-way refers to the number of independent variables in your Analysis of Variance test. One-way has one independent variable with two levels. For example, soda brands.</p>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <h2>Two Way ANOVA Test</h2>
+                <p>Two-way ANOVA is used when there are two independent variables, allowing researchers to explore individual and interactive effects. This method is used when there are two independent variables (factors), each with multiple levels or groups. It tests for main effects of each factor and possible interaction effects between the factors on the dependent variable. Two-way has two independent variables (it can have multiple levels). For example: soda brands and calories. Two-way tests can be with or without replication.</p>
+            </div>
+        </div>
+    </section>
+    <p>In this page, we will focus on One-Way ANOVA Test.</p>
+    <h1>How do we conduct an ANOVA Test?</h1>
+    <p>To put it simply, to preform an ANOVA Test, you calculate the variance between the groups/the variance within the groups. A more in depth explanation would be:</p>
+    <ol>
+        <li><strong>State the Hypotheses:</strong>
+        <ul>
+            <li>Null Hypothesis (H₀): All group means are equal, indicating no significant difference.</li>
+            <li>Alternative Hypothesis (H₁): At least one group mean differs significantly from the others.</li>
+        </ul>
+        </li>
+        <li><strong>Calculate the Sum of Squares(SS:)</strong>Compute SS Total, SS Between, and SS Within.</li>
+        <li><strong>Calculate Mean of Squares(MS)/Variance:</strong>Divide each sum of squares by its respective degrees of freedom to obtain MS Between the Groups(MSB) and MS Within the Groups(MSW).</li>
+        <li><strong>Compute the F-Value:</strong>Divide MSB by MSW to calculate the F-ratio.</li>
+        <li><strong>Interpret the Results:</strong>Compare the F-ratio to a critical value from the F-distribution or use the p-value to determine significance.</li>
+    </ol>
+<h1>Some more helpful resources!</h1>
+<section class="container">
+<div class="courses">
+<div class="course-card">
+<a href="https://www.simplypsychology.org/anova.html">ANOVA Test:Article</a>
+</div>
+</div>
+<div class="courses">
+<div class="course-card">
+<a href="https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/anova/">ANOVA Test:Article</a>
+</div>
+</div>
+<div class="courses">
+<div class="course-card">
+<a href="https://researchmethod.net/anova/">ANOVA Test:Article</a>
+</div>
+</div>
+<div class="courses">
+<div class="course-card">
+<a href="https://www.statology.org/understanding-anova-when-and-how-to-use-it-in-your-research/">ANOVA Test:Article</a>
+</div>
+</div>
+<div class="courses">
+<div class="course-card">
+<a href="https://www.scribbr.com/statistics/one-way-anova/">ANOVA Test:Article</a>
+</div>
+</div>
+<div class="courses">
+<div class="course-card">
+<a href="https://www.youtube.com/watch?v=mOdYddj5IG8">ANOVA Test:Video</a>
+</div>
+</div>
+</section>
+<footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+</body>
+</html>

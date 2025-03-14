@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>ANOVA:Degrees of Freedom</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <header>
+        <h1>Degrees of Freedom</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+            <div class="dropdown-content">
+                <a href="ChiP.html">P-Values</a>
+                <a href="ChiN.html">Null Hypothesis</a>
+                <a href="ChiS.html">Statistical Significance</a>
+                <a href="ChiAT.html">All Together</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+            <div class="dropdown-content">
+                <a href="ANOVAMS.html">Mean of Squares</a>
+                <a href="ANOVASS.html">Sum of Squares</a>
+                <a href="ANOVAF.html">F-value/critical value</a>
+                <a href="ANOVADF.html">Degrees of Freedom</a>
+                <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                <a href="ANOVAES.html">Eta-Squared Value</a>
+                <a href="ANOVAAT.html">All Together</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                    <div class="dropdown-content">
+                    <a href="SpearCA.html">Cronbach's Alpha</a>
+                    <a href="SpearAT.html">All Together</a>
+                </div>
+            </div>
+    </nav>
+    <h1>What is Degrees of Freedom?</h1>
+    <p>Degrees of freedom refer to the maximum number of logically independent values, which may vary in a data sample. Degrees of Freedom is defined as the maximum number of independent values that can vary in a sample space.</p>
+    <p>Here are some examples to help understand the meaning of Degrees of Freedom:</p>
+    <section class="container">
+        <div class="courses">
+            <div class="course-card">
+                <h2>Example 1</h2>
+                <p>Degree of Freedom can easily be understood with the help of the following example. Suppose you have three packets of A, B, and C of food to eat in a day.
+
+                    For Breakfast: You can have any of the three packets (A, B, and C), but you choose to eat packet A.
+                    For Lunch: As, you have only two packets left (B, C) you have two choices and you choose B.
+                    For Dinner: You have only one packet left i.e. C so you are forced to eat that one only.
+                    So, we have two levels of freedom to choose our food for breakfast in a day, so the degree of freedom in this case is two, but for lunch, we have one freedom so the degree of freedom in this case is one and for dinner, we have no choices so the degree of freedom is one.</p>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <h2>Example 2</h2>
+                <p>Suppose you have four friends and four seats labeled 1, 2, 3, and 4 to assign at a dinner table.
+
+                    For the First Friend: You can choose any of the four seats (1, 2, 3, or 4), so you have 4 choices.
+                    For the Second Friend: Three seats remain, so you have 3 choices.
+                    For the Third Friend: Two seats remain, so you have 2 choices.
+                    For the Fourth Friend: Only one seat is left, so you have 1 choice.</p>
+            </div>
+        </div>
+    </section>
+    <h1>Why do we use Degrees of Freedom?</h1>
+    <p>Degrees of freedom are very helpful for ensuring the validity of chi-square tests, t-tests, high f-tests, and others. These tests are very helpful for deducing the validity of any hypothesis. Degree of Freedom helps us to make various crucial decisions.</p>
+    <h1>How do we calculate Degrees of Freedom?</h1>
+    <p>Degrees of Freedom(Between The Groups)=Number of groups you have - 1. Degrees of freedom(Within The Groups)=Number of total values-number of groups you have.</p>
+    <h1>Some more helpful resources!</h1>
+    <section class="container">
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.investopedia.com/terms/d/degrees-of-freedom.asp">Degrees of Freedom:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.geeksforgeeks.org/degrees-of-freedom/">Degrees of Freedom:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.scribbr.com/statistics/degrees-of-freedom/">Degrees of Freedom:Article</a>
+    </div>
+    </div>
+</section>
+<footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+</body>
+</html>

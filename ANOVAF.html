@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>ANOVA:F-Values/Critical Values</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <header>
+        <h1>F-Values/Critical Values</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+            <div class="dropdown-content">
+                <a href="ChiP.html">P-Values</a>
+                <a href="ChiN.html">Null Hypothesis</a>
+                <a href="ChiS.html">Statistical Significance</a>
+                <a href="ChiAT.html">All Together</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+            <div class="dropdown-content">
+                <a href="ANOVAMS.html">Mean of Squares</a>
+                <a href="ANOVASS.html">Sum of Squares</a>
+                <a href="ANOVAF.html">F-value/critical value</a>
+                <a href="ANOVADF.html">Degrees of Freedom</a>
+                <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                <a href="ANOVAES.html">Eta-Squared Value</a>
+                <a href="ANOVAAT.html">All Together</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                    <div class="dropdown-content">
+                    <a href="SpearCA.html">Cronbach's Alpha</a>
+                    <a href="SpearAT.html">All Together</a>
+                </div>
+            </div>
+    </nav>
+    <h1>What is an F-Value?</h1>
+    <p>An F statistic is a value you get when you run an ANOVA test or a regression analysis to find out if the means between two populations are significantly different. It’s similar to a T statistic from a T-Test; A T-test will tell you if a single variable is statistically significant and an F test will tell you if a group of variables are jointly significant. The F statistic is calculated by dividing the variance between groups by the variance within groups.</p>
+    <h1>What is an F Critical Value?</h1>
+    <p>The F critical value is a specific value that is used to determine whether the F statistic is statistically significant. In general, if the F statistic is greater than the F critical value, then you can reject null hypothesis; this means that there is a significant difference between the group variances. Interpreting the F-critical value involves comparing it to the calculated F statistic from your data analysis. Here's how to interpret the F critical value in the context of hypothesis testing, such as ANOVA: If your F statistic is greater than the F critical value, this suggests that the variance between the groups is significantly larger than the variance within the groups. In other words, there is a statistically significant difference between group means. You would reject the null hypothesis, which typically states that there is no difference. If your F statistic is less than or equal to the F critical value, there isn't enough evidence to say that the group variances are significantly different from each other. You would fail to reject the null hypothesis, meaning that any observed differences could likely be due to chance.</p>
+    <h1>What is the difference between the F-Value and the P-Value?</h1>
+    <p>The F value in one way ANOVA is a tool to help you answer the question “Is the variance between the means of two populations significantly different?” The F value in the ANOVA test also determines the P value; The P value is the probability of getting a result at least as extreme as the one that was actually observed, given that the null hypothesis is true. The p value is a probability, while the f ratio is a test statistic. The F statistic must be used in combination with the p value when you are deciding if your overall results are significant. Why? If you have a significant result, it doesn’t mean that all your variables are significant. The statistic is just comparing the joint effect of all the variables together.</p>
+    <h1>Why do we use an F-Test?</h1>
+    <p>In ANOVA, we use the F-test because we are testing for differences between means of 2 or more groups, meaning we want to see if there is variance between the groups. We do so because doing multiple t-tests can cause something to be significant, even if it isn't.</p>
+    <h1>How do we calculate the F-Value?</h1>
+    <p>F-Value=Variance Between Groups/Variance Within Groups. Small Variance Between Groups, large Variance Within Groups=small F-Value=Little to no evidence of a difference between the group means. Large Variance Between Groups, small Variance Within Groups=large F-Value=Large evidence of difference between the group means. The larger the F-Value, the greater the evidence that there is a difference between the group means.</p>
+    <h1>How do we calculate the F-Critical Value?</h1>
+    <p>To find the F critical value for a statistical test such as ANOVA, you'll typically use software that can compute it for you.</p>
+    <h1>Some more helpful resources!</h1>
+    <section class="container">
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.statisticshowto.com/probability-and-statistics/f-statistic-value-test/#top">F-Value/Critical Value:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://statisticsbyjim.com/anova/f-tests-anova/">F-Value/Critical Value:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.criticalvaluecalculator.com/blog/f-critical-value-definition-formula-and-calculations#:~:text=How%20to%20calculate%20the%20F-critical%20value%3F%201%20Determine,software%20to%20get%20the%20F%20critical%20value.%20">F-Critical Value:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.statology.org/anova-f-value-p-value/">F Value:Article</a>
+    </div>
+    </div>
+</section>
+<footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+</body>
+</html>

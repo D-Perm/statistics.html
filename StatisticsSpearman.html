@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <title>Spearman Pairwise Correlations</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <header>
+        <h1>Spearman Pairwise Rank Correlation</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+            <div class="dropdown-content">
+                <a href="ChiP.html">P-Values</a>
+                <a href="ChiN.html">Null Hypothesis</a>
+                <a href="ChiS.html">Statistical Significance</a>
+                <a href="ChiAT.html">All Together</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+            <div class="dropdown-content">
+                <a href="ANOVAMS.html">Mean of Squares</a>
+                <a href="ANOVASS.html">Sum of Squares</a>
+                <a href="ANOVAF.html">F-value/critical value</a>
+                <a href="ANOVADF.html">Degrees of Freedom</a>
+                <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                <a href="ANOVAES.html">Eta-Squared Value</a>
+                <a href="ANOVAAT.html">All Together</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                    <div class="dropdown-content">
+                    <a href="SpearCA.html">Cronbach's Alpha</a>
+                    <a href="SpearAT.html">All Together</a>
+                </div>
+            </div>
+    </nav>
+    <h1>What is Spearman's Pairwise Rank Correlation?</h1>
+    <p>The Spearman’s Correlation Coefficient, represented by ρ or by rR, is a nonparametric <a href="https://www.statology.org/an-introduction-to-non-parametric-statistics/">(Non-parametric tests are useful when data doesn’t follow a normal distribution. They don’t assume a specific distribution. This makes them suitable for skewed or irregular data.)</a> measure of the strength and direction of the association that exists between two ranked variables. It determines the degree to which a relationship is monotonic <a href="https://www.statology.org/monotonic-relationship/">(In statistics, a monotonic relationship between two variables refers to a scenario where a change in one variable is generally associated with a change in a specific direction in another variable.)</a>, i.e., whether there is a monotonic component of the association between two continuous or ordered variables. The Spearman rank correlation coefficient, rs, is the nonparametric version of the Pearson correlation coefficient. Spearman’s returns a value from -1 to 1, where +1 = a perfect positive correlation between ranks, -1 = a perfect negative correlation between ranks, and 0 = no correlation between ranks. Spearman’s Rank Correlation is a statistical measure of the strength and direction of the monotonic relationship between two continuous variables. Therefore, these attributes are ranked or put in the order of their preference. It is denoted by the symbol “rho” (ρ) and can take values between -1 to +1. A positive value of rho indicates that there exists a positive relationship between the two variables, while a negative value of rho indicates a negative relationship. A rho value of 0 indicates no association between the two variables.</p>
+    <h1>Why do we use Spearman Pairwise Rank Correlation?</h1>
+    <p>We use Spearman Pairwise Rank Correlation when working with ranked data or when one or more extreme outliers are present. An example could be a dataset that contains the rank of a student’s math exam score along with the rank of their science exam score in a class. When extreme outliers are present in a dataset, Pearson’s correlation coefficient is highly affected.</p>
+    <h1>What is the difference between Spearman Pairwise Rank Correlation and the Pearson Correlation?</h1>
+    <table>
+        <tr>
+            <th><strong>Category</strong></th>
+            <th><strong>Spearman's Rank Correlation</strong></th>
+            <th><strong>Pearson Correlation</strong></th>
+        </tr>
+        <tr>
+            <td><strong>Type of Relationship</strong></td>
+            <td>Pearson Correlation measures the linear relationship between variables. It assumes that the relationship between the variables can be described with a straight line.</td>
+            <td>Spearman Correlation measures monotonic relationships, where variables move consistently in one direction but not necessarily linearly.</td>
+        </tr>
+        <tr>
+            <td><strong>Data Type</strong></td>
+            <td>Pearson Correlation works with continuous interval or ratio data.</td>
+            <td>Spearman Correlation is suitable for ordinal, ranked, interval, or ratio data.</td>
+        </tr>
+        <tr>
+            <td><strong>Assumptions</strong></td>
+            <td>Pearson Correlation assumes linearity and normal distribution of data.</td>
+            <td>Spearman Correlation does not require normality or linearity and works well with non-parametric data.</td>
+        </tr>
+        <tr>
+            <td><strong>Sensitivity to Outliers</strong></td>
+            <td>Pearson Correlation is based on the covariance and standard deviations of raw values.</td>
+            <td>Spearman Correlation is based on ranking the data points and calculating the difference in ranks.</td>
+        </tr>
+        <tr>
+            <td><strong>Calculation Method</strong></td>
+            <td>Pearson Correlation is based on the covariance and standard deviations of raw values.</td>
+            <td>Spearman Correlation is based on ranking the data points and calculating the difference in ranks.</td>
+        </tr>
+        <tr>
+            <td><strong>Range of Coefficient</strong></td>
+            <td colspan="2">Both Pearson and Spearman correlation coefficients range from - 1 to 1. A value of - indicates a perfect negative correlation,  indicates a perfect positive correlation, and 0 indicates no correlation.</td>
+        </tr>
+        <tr>
+            <td><strong>Ideal Use Cases</strong></td>
+            <td>Pearson Correlation is ideal when the data follows a normal distribution and shows linear trends.</td>
+            <td>Spearman Correlation is ideal for non-linear or ranked data, or when dealing with outliers.</td>
+        </tr>
+        <tr>
+            <td><strong>Example</strong></td>
+            <td>Pearson Correlation: Analyzing the relationship between height and weight of individuals.</td>
+            <td>Spearman Correlation: Assessing the relationship between study hours and exam ranks of students.</td>
+        </tr>
+    </table>
+    <h1>How do we calculate Spearman Pairwise Rank Correlation?</h1>
+<p>We calculate the Spearman Pairwise Rank Correlation with this equation: ρ = 1 – (6∑d<sub>i</sub><sup>2</sup>) / n(n<sup>2</sup> – 1) where ρ  = Spearman Correlation coefficient, rank = the position or order of a variable’s value relative to other values within a dataset, d<sub>i</sub> = the difference in the ranks given to the two variables values for each item of the data, and n = total number of observations. First, creating ranks involves assigning a numerical order to the values in a dataset, where the smallest value gets the rank of 1, the second smallest gets the rank of 2, and so on. If numbers are tied, their average of their ranks are considered. In Spearman’s rank correlation, the process involves converting the original data into ranks. This is done to assess the monotonic relationship between two variables without relying on the specific numerical values of the data points. Then follow the steps: Arrange the values in ascending order, from the smallest to the largest. Assign ranks to each value based on its position in the sorted order. The smallest value gets a rank of 1, the second smallest gets a rank of 2, and so on. Then find out the square of the difference in the ranks given to the two variables values for each item of the data. Once you have got the rank you compute the difference in the ranks. We make the difference in the ranks, and by squaring it we get the final what we call the d-squared values. We sum all the values and then we compute the Spearman coefficient by using this value in the above formula.</p>
+    <h1>Some more helpful resources!</h1>
+    <section class="container">
+    <div class="courses">
+        <div class="course-card">
+        <a href="https://statistics.laerd.com/statistical-guides/spearmans-rank-order-correlation-statistical-guide.php">Spearman's Pairwise Rank Correlation:Article</a>
+        </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+            <a href="https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/spearman-rank-correlation-definition-calculate/">Spearman's Pairwise Rank Correlation:Article</a>
+            </div>
+            </div>
+            <div class="courses">
+                <div class="course-card">
+                <a href="https://www.toppr.com/guides/business-mathematics-and-statistics/correlation-and-regression/rank-correlation/">Spearman's Pairwise Rank Correlation:Article</a>
+                </div>
+                </div>
+                <div class="courses">
+                    <div class="course-card">
+                    <a href="https://www.geeksforgeeks.org/spearmans-rank-correlation/">Spearman's Pairwise Rank Correlation:Article</a>
+                    </div>
+                    </div>
+                    <div class="courses">
+                        <div class="course-card">
+                        <a href="https://www.statology.org/when-to-use-spearman-correlation/">Spearman's Pairwise Rank Correlation:Article</a>
+                        </div>
+                        </div>
+                        <div class="courses">
+                            <div class="course-card">
+                            <a href="https://www.geeksforgeeks.org/pearson-vs-spearman-correlation-coefficient/">Spearman's Pairwise Rank Correlation:Article</a>
+                            </div>
+                            </div>
+</section>
+<footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+</body>
+</html>

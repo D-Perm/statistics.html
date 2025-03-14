@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>ANOVA:Post-Hoc Tests</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <header>
+        <h1>Post-Hoc Tests</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+            <div class="dropdown-content">
+                <a href="ChiP.html">P-Values</a>
+                <a href="ChiN.html">Null Hypothesis</a>
+                <a href="ChiS.html">Statistical Significance</a>
+                <a href="ChiAT.html">All Together</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+            <div class="dropdown-content">
+                <a href="ANOVAMS.html">Mean of Squares</a>
+                <a href="ANOVASS.html">Sum of Squares</a>
+                <a href="ANOVAF.html">F-value/critical value</a>
+                <a href="ANOVADF.html">Degrees of Freedom</a>
+                <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                <a href="ANOVAES.html">Eta-Squared</a>
+                <a href="ANOVAAT.html">All Together</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                    <div class="dropdown-content">
+                    <a href="SpearCA.html">Cronbach's Alpha</a>
+                    <a href="SpearAT.html">All Together</a>
+                </div>
+            </div>
+    </nav>
+    <h1>What is a Post-Hoc Test?</h1>
+    <p>A post hoc test is a statistical procedure conducted after an ANOVA (Analysis of Variance) to determine which specific group means are significantly different from each other. While ANOVA can tell us if there is a statistically significant difference among the means of three or more groups, it does not specify which groups differ. This is where post hoc tests come into play. The primary purpose of Post Hoc Tests is to control the Type I error rate that can occur when multiple comparisons are made. When conducting multiple pairwise comparisons, the likelihood of incorrectly rejecting the null hypothesis increases. Post Hoc Tests, such as Tukey’s HSD or Bonferroni correction, help mitigate this risk by adjusting the significance levels, ensuring that the results are both reliable and valid.</p>
+    <h1>Why do we use Post-Hoc Tests?</h1>
+    <p>While an ANOVA test can tell us if there are significant differences between 3 or more groups,is doesn’t tell us which groups are different from each other. It simply tells us that not all of the group means are equal. In order to find out exactly which groups are different from each other, we must conduct a post hoc test (also known as a multiple comparison test), which will allow us to explore the difference between multiple group means while also controlling for the family-wise error rate.</p>
+    <h1>What are some different types of Post-Hoc Tests?</h1>
+    <p>Here are 3 of the most common types of post-hoc tests:</p>
+    <section class="container">
+        <div class="courses">
+            <div class="course-card">
+                <h2>Bonferroni Correction Post-Hoc Test</h2>
+                <p>The Bonferroni post-hoc test should be used when you have a set of planned comparisons you would like to make beforehand. The Bonferroni post-hoc test produces the most narrow confidence intervals, which means it has the greatest ability to detect true difference between the groups of interest. Note that the Bonferroni post-hoc test can also be used whether or not the group sample sizes are equal. This multiple-comparison post hoc correction is used when you are performing many independent or dependent statistical tests at the same time. The problem with running many simultaneous tests is that the probability of a significant result increases with each test run. This post hoc test sets the significance cut off at α/n. For example, if you are running 20 simultaneous tests at α = 0.05, the correction would be 0.0025. More detail. The Bonferroni does suffer from a loss of power. This is due to several reasons, including the fact that Type II error rates are high for each test. In other words, it overcorrects for Type I errors.</p>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <h2>Tukey Post-Hoc Test</h2>
+                <p>The Tukey post-hoc test should be used when you would like to make pairwise comparisons between group means when the sample sizes for each group are equal. If the sample sizes are not equal, you can use a modified version of the test known as the Tukey-Kramer test. The Tukey Test (or Tukey procedure), also called Tukey’s Honest Significant Difference test, is a post-hoc test based on the studentized range distribution. An ANOVA test can tell you if your results are significant overall, but it won’t tell you exactly where those differences lie. After you have run an ANOVA and found significant results, then you can run Tukey’s HSD to find out which specific groups’s means (compared with each other) are different. The test compares all possible pairs of means.</p>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <h2>Scheffe Post-Host Test</h2>
+                <p>The Scheffe post-hoc test should be used when you would like to make all possible contrasts between group means. This test allows you to compare more than just two means at once, unlike the Tukey post-hoc test. While the Scheffe post-hoc test is the most flexible, it is also the most conservative and produces the widest confidence intervals. This means it has the lowest statistical power and the lowest ability to detect true differences between the groups. Note that the Scheffe post-hoc test can be used whether or not the group sample sizes are equal. The Scheffe test corrects alpha for simple and complex mean comparisons. Complex mean comparisons involve comparing more than one pair of means simultaneously.</p>
+            </div>
+        </div>
+    </section>
+    <h1>How do we conduct a Post-Hoc Test?</h1>
+    <p>To conduct a Post-Hoc Test, you need to know some important things about your data like the number of pairwise tests you will run and the what threshold your p-value is being compared to. That being said, while you can conduct a Post-Hoc Test by hand, it is faster and more efficient to let statistical software run it for you (Excel, DATAtab, etc.).</p>
+    <h1>Some more helpful resources!</h1>
+    <section class="container">
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.statology.org/anova-post-hoc-tests/">Post-Hoc Tests:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://statisticseasily.com/glossario/what-is-post-hoc-test-comprehensive-guide/">Post-Hoc Tests:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/post-hoc/#PHbonferroni">Post-Hoc Tests:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.geeksforgeeks.org/null-hypothesis/">Null Hypothesis:Article</a>
+    </div>
+    </div>
+</section>
+<footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+</body>
+</html>

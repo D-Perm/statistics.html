@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Chi-Squared Test of Independence</title>
+  <link rel="stylesheet" href="stuff.css">
+    </head>
+    <body>
+        <header><h1>Chi-Squared Test of Independence</h1></header>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+                <div class="dropdown-content">
+                    <a href="ChiP.html">P-Values</a>
+                    <a href="ChiN.html">Null Hypothesis</a>
+                    <a href="ChiS.html">Statistical Significance</a>
+                    <a href="ChiAT.html">All Together</a>
+            </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+                <div class="dropdown-content">
+                    <a href="ANOVAMS.html">Mean of Squares</a>
+                    <a href="ANOVASS.html">Sum of Squares</a>
+                    <a href="ANOVAF.html">F-value/critical value</a>
+                    <a href="ANOVADF.html">Degrees of Freedom</a>
+                    <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                    <a href="ANOVAES.html">Eta-Squared Value</a>
+                    <a href="ANOVAAT.html">All Together</a>
+                    </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                        <div class="dropdown-content">
+                        <a href="SpearCA.html">Cronbach's Alpha</a>
+                        <a href="SpearAT.html">All Together</a>
+                    </div>
+                </div>
+        </nav>
+        <h1>What is a Chi-Squared Test?</h1>
+    <p>A chi-squared test is a statistical test used to analyze data in large groups. It compares what actually happened (observed frequencies) to what was expected to happen (expected frequencies). This test helps us decide if a difference between two categories is due to random chance or if there's a real connection between them.</p>
+    <p>There are two types of Chi-Squared Tests:</p>
+    <section class="container">
+        <div class="courses">
+            <div class="course-card">
+                <h2>Chi-Squared Test of Independence</h2>
+                <p>The Chi-Square test of Independence is a derivable ( also known as inferential ) statistical test that examines whether the two sets of variables are likely to be related to each other or not. It can be used to determine if there is an association between two categorical variables in a many different settings.This test is used when we have counts of values for two nominal (Nominal data refers to categories that have no meaningful order or ranking) or categorical variables and is considered a non-parametric test. A relatively large sample size and independence of observations are the required criteria for conducting this test. They’re used to determine whether your data are significantly different from what you expected. You can use a chi-square test of independence, also known as a chi-square test of association, to determine whether two categorical variables are related. If two variables are related, the probability of one variable having a certain value is dependent on the value of the other variable. The chi-square test of independence calculations are based on the observed frequencies, which are the numbers of observations in each combined group. The test compares the observed frequencies to the frequencies you would expect if the two variables are unrelated. When the variables are unrelated, the observed and expected frequencies will be similar.</p>
+                <h3>Example:</h3>
+                <p>In a movie theatre, suppose we made a list of movie genres. Let us consider this as the first variable. The second variable is whether or not the people who came to watch those genres of movies bought snacks at the theatre. Here, the null hypothesis is that the genre of the film and whether people bought snacks are unrelatable. If this is true, the movie genres don’t impact snack sales.</p>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <h2>Chi-Squared Test of Goodfit</h2>
+                <p>In statistical hypothesis testing, the Chi-Square Goodness-of-Fit test determines whether a variable is likely to come from a given distribution. We must have a set of data values and an idea of the distribution of this data. We can use this test when we have value counts for categorical variables. This test demonstrates a way of deciding if the data values have a “ good enough” fit for our idea or if it is a representative sample data of the entire population.</p>
+                <h3>Example:</h3>
+                <p>Suppose we have bags of balls with five different colours in each bag. The given condition is that the bag should contain an equal number of balls of each color. The idea we would like to test here is that the proportions of the five colours of balls in each bag must be exact.</p>
+            </div>
+        </div>
+    </section>
+    <h1>What are Categorical Variables?</h1>
+    <p>Categorical variables are a subset of variables that can be divided into discrete categories. Names or labels are the most common categories. These variables are also qualitative because they depict the variable's quality or characteristics.</p>
+    <p>Categorical variables can be divided into two categories:</p>
+    <ol>
+        <li><strong>Nominal Variable:</strong> A nominal variable's categories have no natural ordering. Example: Gender, Blood groups.</li>
+        <li><strong>Ordinal Variable:</strong> A variable that allows the categories to be sorted is an ordinal variable. An example is customer satisfaction (Excellent, Very Good, Good, Average, Bad, and so on).</li>
+    </ol>
+    <h1>Why do we use Chi-Squared Tests?</h1>
+    <p>A Chi-Square test examines whether the observed results correspond to the expected values. When the data to be analysed is from a random sample, and when the variable is the question is a categorical variable, then Chi-Square proves the most appropriate test for the same. A categorical variable consists of selections such as breeds of dogs, types of cars, genres of movies, educational attainment, male v/s female etc. Survey responses and questionnaires are the primary sources of these types of data. The Chi-Square test is most commonly used for analysing this kind of data. This type of analysis is helpful for researchers studying survey response data. The research can range from customer and marketing research to political sciences and economics.</p>
+    <h1>What is a Chi-Square Distribution?</h1>
+    <p>Chi-Square distributions (X2) are a type of continuous probability distribution. They're commonly utilized in hypothesis testing, such as the chi-square goodness of fit and independence tests. The parameter k, which represents the degrees of freedom, determines the shape of a chi-square distribution. Very few real-world observations follow a chi-square distribution. Chi-square distributions aim to test hypotheses, not to describe real-world distributions. In contrast, other commonly used distributions, such as normal and Poisson distributions, may explain important things like birth weights or illness cases per year. Chi-Square distributions are excellent for hypothesis testing because they closely resemble the conventional normal distribution. Many essential statistical tests rely on the traditional normal distribution. In statistical analysis, the Chi-Square distribution is used in many hypothesis tests and is determined by the parameter k degree of freedom. It belongs to the family of continuous probability distributions. The Sum of the squares of the k-independent standard random variables is called the Chi-Squared distribution.</p>
+    <h1>How do you conduct a Chi-Squared Test?</h1>
+    <p>There are a few main steps to follow when conducting a Chi-Squared Test: State the Hypotheses, Calculate the Expected Frequencies, Compute the Chi-Square Statistic, Determine the Degrees of Freedom, and Find the Critical Value and Compare.</p>
+    <h1>What are some limitations of the Chi-Squared Test?</h1>
+    <p>You should be aware of two limitations to using the chi-square test. The Chi-Square test, for starters, is extremely sensitive to sample size. Even insignificant relationships can appear statistically significant when a large enough sample is used. Remember that "statistically significant" does not always imply "meaningful" when using the chi-square test. Be mindful that the chi-square can only determine whether two variables are related. It does not necessarily follow that one variable has a causal relationship. It would require a more detailed analysis to establish causality.</p>
+    <h1>Some more helpful resources!</h1>
+    <section class="container">
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/">Chi-Squared Test:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.simplilearn.com/tutorials/statistics-tutorial/chi-square-test">Chi-Squared Test of Independence:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://libguides.library.kent.edu/SPSS/ChiSquare">Chi-Squared Test of Independence:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.youtube.com/watch?v=rpKzq64GA9Y">Chi-Squared Test:Video</a>
+    </div>
+    </div>
+</section>
+        <footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+    </body>
+</html>

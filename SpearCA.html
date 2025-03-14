@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Spear:Cronbach's Alpha</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <header>
+        <h1>Cronbach's Alpha</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="StatisticsChi.html">Chi-Squared Test of Independence</a></button>
+            <div class="dropdown-content">
+                <a href="ChiP.html">P-Values</a>
+                <a href="ChiN.html">Null Hypothesis</a>
+                <a href="ChiS.html">Statistical Significance</a>
+                <a href="ChiAT.html">All Together</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><li><a href="StatisticsANOVA.html">Single-Factor ANOVA with Bonferroni Post-Hoc Tests</a></li></button>
+            <div class="dropdown-content">
+                <a href="ANOVAMS.html">Mean of Squares</a>
+                <a href="ANOVASS.html">Sum of Squares</a>
+                <a href="ANOVAF.html">F-value/critical value</a>
+                <a href="ANOVADF.html">Degrees of Freedom</a>
+                <a href="ANOVAPH.html">Post-Hoc Tests</a>
+                <a href="ANOVAES.html">Eta-Squared Value</a>
+                <a href="ANOVAAT.html">All Together</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><li><a href="StatisticsSpearman.html">Spearman Pairwise Rank Correlations</a></li></button>
+                    <div class="dropdown-content">
+                    <a href="SpearCA.html">Cronbach's Alpha</a>
+                    <a href="SpearAT.html">All Together</a>
+                </div>
+            </div>
+    </nav>
+    <h1>What is Cronbach's Alpha?</h1>
+    <p>Cronbach’s alpha tests to see if multiple-question Likert scale surveys are reliable. These questions measure latent variables—hidden or unobservable variables like: a person’s conscientiousness, neurosis or openness. These are very difficult to measure in real life. Cronbach’s alpha will tell you how closely related a set of test items are as a group. Cronbach’s alpha coefficient measures the internal consistency, or reliability, of a set of survey items. Use this statistic to help determine whether a collection of items consistently measures the same characteristic. Cronbach’s alpha quantifies the level of agreement on a standardized 0 to 1 scale. Higher values indicate higher agreement between items. High Cronbach’s alpha values indicate that response values for each participant across a set of questions are consistent. For example, when participants give a high response for one of the items, they are also likely to provide high responses for the other items. This consistency indicates the measurements are reliable and the items might measure the same characteristic. Conversely, low values indicate the set of items do not reliably measure the same construct. High responses for one question do not suggest that participants rated the other items highly. Consequently, the questions are unlikely to measure the same property because the measurements are unreliable. It measures the “internal consistency”(basically it means how well correlated the items in the scale are)  between items in a scale(in our case questions). According to research, if there is an acceptable to high correlation between scale items, Cronbach’s Alpha will return a value between 0.7-0.9.</p>
+    <h1>Why do we use Cronbach's Alpha?</h1>
+    <p>Analysts frequently use Cronbach’s alpha when designing and testing a new survey or assessment instrument. This statistic helps them evaluate the quality of the tool during the design phase before deploying it fully. It is a measure of reliability. Surveys and assessment instruments frequently ask multiple questions about the same concept, characteristic, or construct. By including several items on the same aspect, the test can develop a more nuanced assessment of the phenomenon. Analysts can combine multiple related items to form a scale for the construct. However, before including various questions in a scale, they must be sure that all items reliably measure the same construct. Cronbach’s alpha helps with that process. Imagine researchers are developing a self-esteem scale and are developing multiple items to measure that construct. If all items actually assess self-esteem, then scores across items should generally agree, producing a high Cronbach’s alpha. For instance, individuals with high self-esteem will tend to score highly on all items. Conversely, individuals with low self-esteem will tend to score low on all items. However, if not all items assess self-esteem, individuals can measure high on some questions and low on others. The scores across items disagree, producing a lower Cronbach’s alpha.</p>
+    <h1>How do we calculate Cronbach's Alpha?</h1>
+    <p>To calculate Cronbach's Alpha, we use the equation: α=(N*c̄)/(v̄+(N-1)*c̄) where N = the number of items, c̄ = average covariance<a href="https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/covariance/">(Covariance measures joint variability — the extent of variation between two random variables. It is similar to variance, but while variance quantifies the variability of a single variable, covariance quantifies how two variables vary together.)</a> between item-pairs, and v̄ = average variance. While it’s good to know the formula behind the concept, in reality you won’t actually need to work it. You’ll often calculate Cronbach's Alpha in Excel or similar software.</p>
+    <h1>Some more helpful resources!</h1>
+    <section class="container">
+    <div class="courses">
+    <div class="course-card">
+    <a href="https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/cronbachs-alpha-spss/">Cronbach's Alpha:Article</a>
+    </div>
+    </div>
+    <div class="courses">
+        <div class="course-card">
+        <a href="https://www.statology.org/how-to-report-cronbachs-alpha/">Cronbach's Alpha:Article</a>
+        </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+            <a href="https://statisticsbyjim.com/basics/cronbachs-alpha/">Cronbach's Alpha:Article</a>
+            </div>
+            </div>
+            <div class="courses">
+                <div class="course-card">
+                <a href="https://www.youtube.com/watch?v=W9uPvAmtTOk">Cronbach's Alpha:Video</a>
+                </div>
+                </div>
+</section>
+<footer><h6>Disclaimer: Generative AI helped. Some words directly taken from sources linked above. We do not claim that any of these words/sentences/paragraphs are completely original to us. We acknowledge the articles/videos in links. This is just for learning.</h6></footer>
+</body>
+</html>

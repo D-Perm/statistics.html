@@ -69,7 +69,56 @@
     <h1>What is a Chi-Square Distribution?</h1>
     <p>Chi-Square distributions (X2) are a type of continuous probability distribution. They're commonly utilized in hypothesis testing, such as the chi-square goodness of fit and independence tests. The parameter k, which represents the degrees of freedom, determines the shape of a chi-square distribution. Very few real-world observations follow a chi-square distribution. Chi-square distributions aim to test hypotheses, not to describe real-world distributions. In contrast, other commonly used distributions, such as normal and Poisson distributions, may explain important things like birth weights or illness cases per year. Chi-Square distributions are excellent for hypothesis testing because they closely resemble the conventional normal distribution. Many essential statistical tests rely on the traditional normal distribution. In statistical analysis, the Chi-Square distribution is used in many hypothesis tests and is determined by the parameter k degree of freedom. It belongs to the family of continuous probability distributions. The Sum of the squares of the k-independent standard random variables is called the Chi-Squared distribution.</p>
     <h1>How do you conduct a Chi-Squared Test?</h1>
-    <p>There are a few main steps to follow when conducting a Chi-Squared Test: State the Hypotheses, Calculate the Expected Frequencies, Compute the Chi-Square Statistic, Determine the Degrees of Freedom, and Find the Critical Value and Compare.</p>
+    <p>There are a few main steps to follow when conducting a Chi-Squared Test:</p>
+    <ol>
+        <strong><h2><li>Formulating Hypotheses:</h2></strong>
+        <ul>
+            <p><li>Null Hypothesis (H₀): This hypothesis states that there is no relationship between the two categorical variables. In other words, the variables are independent of each other.</li></p>
+            <p><li>Alternative Hypothesis (H₁): The alternative hypothesis suggests that there is a relationship between the variables, meaning that they are not independent.</li></p>
+        </ul>
+        </li>
+        <strong><h2><li>Collecting and Organizing Data:</h2></strong><p>Next, gather data on the variables you are interested in examining. This data should be categorical, with each observation falling into one category for each variable. Once you have collected the data, organize it into a contingency table, which displays the frequencies of observations for each combination of categories.</p></li>
+        <strong><h2><li>Calculating Expected Frequencies:</h2></strong><p>The next step involves calculating the expected frequencies for each cell in the contingency table, assuming that the null hypothesis is true (i.e., there is no relationship between the variables). The expected frequency for each cell is calculated using the following formula:</p>
+            <p><strong>E<sub>ij</sub> = (Row Total of Row i × Column Total of Column j) / Grand Total</strong> Where:</p>
+            <ul>
+            <p><li>E<sub>ij</sub> is the expected frequency for cell (i,j)</li></p>
+            <p><li>Row Total of Row i is the total number of observations in the i-th row</li></p>
+            <p><li>Column Total of Column j is the total number of observations in the j-th column</li></p>
+            <p><li>Grand Total is the total number of observations in the entire dataset</li></p>
+            </ul>
+        </li>
+        <strong><h2><li>Computing the Chi-Square Statistic:</h2></strong><p>Once you have the observed and expected frequencies, the next step is to calculate the Chi-Square statistic. This statistic measures the difference between the observed and expected frequencies for each cell in the contingency table. The formula for the Chi-Square statistic is:</p>
+            <p><strong>χ2 = ∑ [(O<sub>ij</sub> – E<sub>ij</sub>)<sup>2</sup> / E<sub>ij</sub>]</strong> Where:</p>
+            <ul>
+            <p><li>χ2 is the Chi-Square statistic</li></p>
+            <p><li>O<sub>ij</sub> is the observed frequency for cell (i,j)</li></p>
+            <p><li>E<sub>ij</sub> is the expected frequency for cell (i,j)</li></p>
+            <p><li>The sum is taken over all cells in the contingency table</li></p>
+            </ul>
+            <p>For each cell, you subtract the expected frequency from the observed frequency, square the result, and divide by the expected frequency. After calculating this value for all cells, you sum the results to obtain the overall Chi-Square statistic.</p>
+        </li>
+        <strong><h2><li>Determining Degrees of Freedom:</h2></strong><p>Degrees of freedom (df) are a critical component in determining the significance of the Chi-Square statistic. In the case of a Chi-Square test for independence, the degrees of freedom are calculated using the formula:</p>
+            <p><strong>df = (r – 1) × (c – 1)</strong> Where:</p>
+            <ul>
+            <p><li>r is the number of rows in the contingency table</li></p>
+            <p><li>c is the number of columns in the contingency table</li></p>
+            </ul>
+        </li>
+        <strong><h2><li>Interpreting the Results:</h2></strong><p>To determine whether the relationship between the variables is statistically significant, compare the calculated Chi-Square statistic to a critical value from the Chi-Square distribution table. The critical value depends on two factors: the degrees of freedom and the chosen significance level (often set at 0.05, or 5%). If the calculated Chi-Square statistic is greater than the critical value, you can reject the null hypothesis, indicating that there is a significant relationship between the variables. If the Chi-Square statistic is less than the critical value, you fail to reject the null hypothesis, meaning that there is no evidence of a relationship between the variables.</p>
+        <p>To find the critical value of your Chi Squared Test, you can either let statistical software calculate it for you of you can use a Chi-Square Distribution Table, ex. below:</p>
+        <a href="https://www.statology.org/chi-square-distribution-table/"><img src="Table.png" alt="Chi-Square Distribution Table" height="600px" width="600px"></a>
+        <p>To use it, just find your P-Value and your Degrees of Freedom on the table an wherever they intersect is the Chi-Square Critical Value.</p>
+        </li>
+            <strong><h2><li>Reporting the Results:</h2></strong><p>When reporting the results of a Chi-Square test in a research paper or article, it is important to provide a clear summary of the findings. Typically, this includes the following information:</p>
+            <ul>
+            <p><li>The observed Chi-Square statistic</li></p>
+            <p><li>The degrees of freedom</li></p>
+            <p><li>The p-value (the probability that the observed association occurred by chance)</li></p>
+            <p><li>Whether the result is statistically significant (i.e., whether you reject the null hypothesis)</li></p>
+            <p><li>A brief interpretation of the findings in the context of the research question</li></p>
+            </ul>
+        </li>
+    </ol>
     <h1>What are some limitations of the Chi-Squared Test?</h1>
     <p>You should be aware of two limitations to using the chi-square test. The Chi-Square test, for starters, is extremely sensitive to sample size. Even insignificant relationships can appear statistically significant when a large enough sample is used. Remember that "statistically significant" does not always imply "meaningful" when using the chi-square test. Be mindful that the chi-square can only determine whether two variables are related. It does not necessarily follow that one variable has a causal relationship. It would require a more detailed analysis to establish causality.</p>
     <h1>Some more helpful resources!</h1>
@@ -89,6 +138,16 @@
     <a href="https://libguides.library.kent.edu/SPSS/ChiSquare">Chi-Squared Test of Independence:Article</a>
     </div>
     </div>
+    <div class="courses">
+        <div class="course-card">
+        <a href="https://easysociology.com/research-methods/how-to-conduct-a-chi-square-test/">Chi-Squared Test of Independence:Article</a>
+        </div>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+            <a href="https://www.statology.org/chi-square-critical-value-r/">Chi-Squared Test of Independence:Article</a>
+            </div>
+            </div>
     <div class="courses">
     <div class="course-card">
     <a href="https://www.youtube.com/watch?v=rpKzq64GA9Y">Chi-Squared Test:Video</a>
